@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="images/profile-img.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="res.css">
+    <title>Thiệp chúc </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Josefin Sans', sans-serif;
+            text-shadow: 0 10px 10px rgb(0, 0, 0, 0.2);
+        }
+        
+        .all {
+            position: relative;
+            padding: 10px;
+            width: 100%;
+            height: 100vh;
+            color: rgb(255, 255, 255, 0.9);
+            background: rgb(244, 246, 246);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background: url(images/kyle-gregory-devaras-QFjSiok61xA-unsplash.jpg) center/cover;
+        }
+        
+        h1 {
+            font-size: 130px;
+            font-family: 'Bebas Neue', cursive;
+        }
+        
+        h3 {
+            font-size: 25px;
+            margin-top: 20px;
+        }
+        
+        .hide {
+            display: none;
+        }
+        
+        .container {
+            border: none;
+            padding-top: 150px;
+            width: 70%;
+            height: 70vh;
+            text-align: center;
+            border-radius: 15px;
+            background: rgb(255, 225, 255, 0.1);
+            box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.3);
+            backdrop-filter: blur(25px);
+            z-index: 1;
+        }
+        
+        .cirle {
+            overflow: hidden;
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 10000px;
+            background-color: rgb(244, 208, 63);
+            background: linear-gradient(45deg, rgb(244, 208, 63), rgb(236, 112, 99));
+        }
+        
+        .title-cat {
+            font-size: 60px;
+        }
+        
+        .c1 {
+            top: 30px;
+            left: 100px;
+            box-shadow: 0px 0px 30px rgb(255, 255, 255, 0.8);
+            animation: move-up-dow 7s infinite;
+        }
+        
+        .c2 {
+            width: 2400px;
+            height: 2400px;
+            top: 370px;
+            right: -1000px;
+            box-shadow: 0px 0px 20px rgb(255, 255, 255, 0.8);
+            animation: move-left-right 10s infinite;
+        }
+        
+        .c3 {
+            width: 100px;
+            height: 100px;
+            top: 30px;
+            right: 500px;
+            z-index: 0;
+            box-shadow: 0px 0px 20px rgb(255, 255, 255, 0.8);
+            animation: move-up-dow-x 5s infinite;
+        }
+        
+        .wave-icon-1 {
+            position: absolute;
+            text-shadow: none;
+            font-size: 500px;
+            top: -90px;
+            left: -50px;
+            color: rgb(255, 255, 255, 0.4);
+            animation: move-up-dow-x 10s infinite;
+        }
+        
+        .wave-icon-2 {
+            position: absolute;
+            text-shadow: none;
+            font-size: 2000px;
+            top: -600px;
+            left: -170px;
+            color: rgb(255, 255, 255, 0.4);
+        }
+        
+        .wave-icon-3 {
+            position: absolute;
+            text-shadow: none;
+            font-size: 150px;
+            color: rgb(255, 255, 255, 0.4);
+        }
+        
+        .accout {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            height: 40px;
+            top: 20px;
+            right: 20px;
+            width: 170px;
+        }
+        
+        .img-profile {
+            width: 40px;
+            height: 40px;
+            border-radius: 99px;
+        }
+        
+        .name {
+            margin-top: 13px;
+        }
+        
+        .date {
+            font-size: 25px;
+        }
+        
+        @keyframes move-up-dow {
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(0, +100px);
+            }
+        }
+        
+        @keyframes move-up-dow-x {
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(0, +50px);
+            }
+        }
+        
+        @keyframes move-left-right {
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(+100px, 0);
+            }
+        }
+        
+        .letter {
+            display: none;
+            text-align: center;
+        }
+        
+        .chin-name {
+            display: none;
+        }
+        
+        @keyframes move-left-right-x {
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(+6px, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="buttons">
+        <!-- Chữ ở menu bạn có thể sửa lại theo ý của bạn -->
+        <a href="index.html" class="btn btn-bir">💕SINH NHẬT 💕</a>
+        <a href="main.html" class="btn btn-bir">😍Thiệp 😍</a>
+        <a href="timeline.html" class="btn btn-timeline">💖Dens time💖</a>
+        <a href="timeline1.html" class="btn btn-timeline">💖Dens time💖 pass 2 </a>
+        <a href="gallery.html" class="btn btn-gallery">🐽Ảnh (Không chê nhá)😂 </a>
+    </div>
+    <div class="all">
+        <div class="cirle c1"><i class='bx bx-water wave-icon-1'></i></div>
+        <div class="cirle c2"><i class='bx bx-water  wave-icon-2'></i></div>
+        <div class="cirle c3"><i class='bx bx-loader-circle bx-flip-vertical wave-icon-3'></i></div>
+        <div class="container">
+            <div class="accout">
+                <img class="img-profile" src="images/profile-img.jpg" alt="">
+                <p class="name">ղɕ❍ɑղლ*1602</p>
+            </div>
+            <p class="date"></p>
+            <h2>HΔPPΨβIRTHDΔΨ</h2>
+            <h2 class="title-cat">16-02 <i class='bx bxs-cat'></i> 2002</h2>
+            <h3>Khuất Thị Thanh Ngoan </h3>
+        </div>
+    </div>
+
+    <script>
+        const date = document.querySelector(".date");
+        date.innerText = new Date().toLocaleString('vi');
+    </script>
+    <audio id="player" autoplay loop>
+    <source src="./music/music.mp3" type="audio/mp3" />
+</audio>
+</body>
+
+</html>
