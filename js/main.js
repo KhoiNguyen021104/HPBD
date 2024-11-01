@@ -1,25 +1,25 @@
-// validation form login
 const inputUsername = document.querySelector(".input-login-username");
 const inputPassword = document.querySelector(".input-login-password");
 const btnLogin = document.querySelector(".login__signInButton");
 
-// validation form login
 
 btnLogin.addEventListener("click", (e) => {
     e.preventDefault();
     if (inputUsername.value === "" || inputPassword.value === "") {
-        alert("vui lòng không để trống");
+        alert("Định không nhập à 😀");
     } else {
         const user = {
-            username: inputUsername.value,
-            password: "thanhngoan1602"
+            username: '0343925539',
+            password: "LƯU THU HÀ"
         };
         console.log(user);
-        if (user.password === inputPassword.value) {
-            alert("Đăng Nhập Thành Công");
-            window.location.href = "index1.html";
+        if(user.username === inputUsername.value) {
+            if (user.password === (inputPassword.value).toUpperCase()) {
+                alert("Gét gô 😁");
+                window.location.href = "index1.html";
+            }
         } else {
-            alert("Đăng Nhập Thất Bại");
+            alert("😵‍💫😵‍💫😵‍💫😵‍💫😵‍💫");
             inputPassword.value = "";
             inputPassword.focus();
         }

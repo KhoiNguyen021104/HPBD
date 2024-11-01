@@ -21,7 +21,7 @@ a {
 .buttons {
     display: flex;
     column-gap: 3rem;
-    padding: 2rem;
+    /* padding: 0.8rem; */
 }
 
 .btn-bir:hover {
