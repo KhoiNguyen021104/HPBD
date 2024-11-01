@@ -36,6 +36,7 @@ body {
     flex-wrap: wrap; /* Cho phép các item xuống dòng */
     gap: 16px; /* Khoảng cách giữa các item */
     padding: 20px;
+    cursor: pointer;
 }
 
 .gallery-item {
