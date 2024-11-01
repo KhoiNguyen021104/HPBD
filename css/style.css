@@ -98,6 +98,6 @@ a {
     position: absolute;
     margin-top: 3rem;
     left: calc(50% - 100px);
-    border-radius: 120px;
+    border-radius: 50%;
     border: 5px solid rgb(255, 17, 0);
 }
