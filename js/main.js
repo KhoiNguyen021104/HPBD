@@ -16,7 +16,7 @@ btnLogin.addEventListener("click", (e) => {
         if(user.username === inputUsername.value) {
             if (user.password === (inputPassword.value).toUpperCase()) {
                 alert("Gét gô 😁");
-                window.location.href = "index1.html";
+                window.location.href = "main.html";
             }
         } else {
             alert("😵‍💫😵‍💫😵‍💫😵‍💫😵‍💫");
